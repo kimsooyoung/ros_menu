@@ -9,7 +9,7 @@ if [[ $(grep 20.04 /etc/issue) ]]; then
 else
     ros1_distro="melodic"
     ros2_distro="eloquent"
-    config_file=./yaml/ros_menu_18.04.yaml
+    config_file=./yaml/ros_menu_18.04_OpenSG.yaml
 fi
 
 # ROS environment installation
