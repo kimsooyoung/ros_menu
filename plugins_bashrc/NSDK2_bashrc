@@ -1,0 +1,34 @@
+# # # # # # # # # # # # # # # #
+# Start of ADLINK DDS Setting #
+# # # # # # # # # # # # # # # #
+
+# Neuron SDK + Eclipse Cyclone DDS #
+if [ -f "/opt/adlink/neuron-sdk/ros/foxy/local_setup.$shell" ];
+then
+    source /opt/adlink/neuron-sdk/ros/foxy/local_setup.$shell
+    export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+    export ADLINK_LICENSE=/opt/adlink/neuron-sdk/
+    echo "Source Neuron SDK successfully"
+else
+    echo "Neuron SDK is not installed. Please contact ADLINK."
+fi
+
+# Provide NSDK CLI #
+function nsdk_version()
+{
+    echo -n "Neuron Startup Menu version: "
+    ros_menu_version
+    apt policy '^neuron-library*'
+    apt policy '^neuron-sdk*'
+}
+
+function nsdk_uninstall()
+{
+    sudo apt remove '^neuron-library*'
+    sudo apt remove '^neuron-sdk*'
+    ros_menu_uninstall
+}
+
+# # # # # # # # # # # # # # # #
+# END of ADLINK DDS Settings  #
+# # # # # # # # # # # # # # # #

@@ -1,0 +1,25 @@
+Product: Neuron Startup Menu
+----------------------------
+
+v1.4.0:
+1. Use Cyclone DDS as default DDS implementation.
+2. Support using YAML to generate menu.
+
+v1.3.0:
+1. Rename ros_dotfiles to ros_menu.
+2. Prompt to install necessary ROS packages while installation.
+3. Support ros_menu_* commands.
+
+v1.2.0:
+1. Run ROS bridge automatically while choosing bridge.
+2. Rename CycloneDDS to Eclipse Cyclone DDS.
+3. Prompt how to install DDS while DDS is not installed.
+4. Support NSDKv2.
+
+v1.1.0:
+1. Rename to Neuron Startup Menu.
+2. Support plugins.
+3. Split config_bashrc and ros_bashrc.
+
+v1.0.0:
+1. First Release.
