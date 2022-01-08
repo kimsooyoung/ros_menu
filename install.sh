@@ -8,7 +8,7 @@ if [[ $(grep 20.04 /etc/issue) ]]; then
     config_file=./yaml/ros_menu_20.04.yaml
 else
     ros1_distro="melodic"
-    ros2_distro="dashing"
+    ros2_distro="eloquent"
     config_file=./yaml/ros_menu_18.04.yaml
 fi
 

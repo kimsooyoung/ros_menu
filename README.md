@@ -6,7 +6,7 @@ ADLINK provides Neuron Startup Menu to make your life easier.
 # Support Platform
 
 * Ubuntu 18.04
-  - ROS 1 melodic / ROS 2 dashing
+  - ROS 1 melodic / ROS 2 eloquent
 * Ubuntu 20.04
   - ROS 1 noetic / ROS 2 foxy
 
@@ -22,7 +22,7 @@ sudo apt install -y git curl
 * Installation
 
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Adlink-ROS/ros_menu/master/scripts/setup.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/kimsooyoung/ros_menu/main/scripts/setup.sh)"
 ```
 
 * Optional: you can add variables while downloading ros_menu.
