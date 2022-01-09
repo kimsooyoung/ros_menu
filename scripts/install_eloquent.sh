@@ -29,7 +29,7 @@ ros2_distro=eloquent
     sudo apt install -y ros-$ros2_distro-ros1-bridge
 
     # For successful neuronbot build
-    sudo apt install ros-eloquent-gazebo-ros-pkgs
-    sudo apt install ros-eloquent-nav2-*
+    sudo apt install -y ros-$ros2_distro-gazebo-ros-pkgs
+    sudo apt install -y ros-$ros2_distro-nav2-*
 
 echo "ROS 2 $ros2_distro installed successfully"
