@@ -32,4 +32,7 @@ ros2_distro=eloquent
     sudo apt install -y ros-$ros2_distro-gazebo-ros-pkgs
     sudo apt install -y ros-$ros2_distro-nav2-*
 
+    # Extra Essential Packages
+    sudo apt install ros-eloquent-joint-state-publisher-gui
+
 echo "ROS 2 $ros2_distro installed successfully"
