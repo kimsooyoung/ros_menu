@@ -33,6 +33,11 @@ ros2_distro=eloquent
     sudo apt install -y ros-$ros2_distro-nav2-*
 
     # Extra Essential Packages
-    sudo apt install ros-eloquent-joint-state-publisher-gui
+    sudo apt install -y ros-eloquent-joint-state-publisher-gui
+    sudo apt install -y ros-eloquent-launch-testing-ament-cmake
+    sudo apt install -y ros-eloquent-geographic-msgs
+    sudo apt install -y ros-eloquent-diagnostic-updater
+    sudo apt install -y ros-eloquent-diagnostic-msgs
+
 
 echo "ROS 2 $ros2_distro installed successfully"
