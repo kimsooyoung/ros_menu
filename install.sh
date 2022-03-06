@@ -40,6 +40,31 @@ cp $config_file config.yaml
 
 if ! grep -q ros_menu ~/.${shell}rc; then
     cat <<EOF >> ~/.${shell}rc
+alias eb='gedit ~/.bashrc'
+alias sb='source ~/.bashrc'
+alias gs='git status'
+alias gp='git pull'
+alias cw='cd ~'
+alias cs='cd ~/src'
+alias cm='cd ~ && catkin_make'
+
+alias cma='catkin_make -DCATKIN_WHITELIST_PACKAGES=""'
+alias cop='catkin_make --only-pkg-with-deps'
+alias copr='catkin_make -DCMAKE_BUILD_TYPE=Release --only-pkg-with-deps'
+alias sds='source devel/setup.bash'
+alias axclient='rosrun actionlib axclient.py'
+alias killg='killall -9 gzserver && killall -9 gzclient && killall -9 rosmaster'
+
+alias cba='colcon build --symlink-install'
+alias cbr='colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release'
+alias cbp='colcon build --symlink-install --packages-select'
+
+alias rosdinstall='rosdep install -y -r -q --from-paths src --ignore-src --rosdistro'
+
+alias rosmelo="source /opt/ros/melodic/setup.bash"
+alias roseloq='source /opt/ros/eloquent/setup.bash && source ./install/setup.bash && export PYTHONPATH=/opt/ros/eloquent/lib/python3.6/site-packages'
+alias rosfoxy='source /opt/ros/foxy/setup.bash && source ./install/setup.bash && export PYTHONPATH=/opt/ros/foxy/lib/python3.6/site-packages'
+alias rosdinstall='rosdep install -y -r -q --from-paths src --ignore-src --rosdistro'
 # Neuron Startup Menu #
 ros_bashrc_path=~/.ros_menu/ros_bashrc
 if [ -f \$ros_bashrc_path ]; then
