@@ -63,7 +63,7 @@ alias rosdinstall='rosdep install -y -r -q --from-paths src --ignore-src --rosdi
 
 alias rosmelo="source /opt/ros/melodic/setup.bash"
 alias roseloq='source /opt/ros/eloquent/setup.bash && source ./install/setup.bash && export PYTHONPATH=/opt/ros/eloquent/lib/python3.6/site-packages'
-alias rosfoxy='source /opt/ros/foxy/setup.bash && source ./install/setup.bash && export PYTHONPATH=/opt/ros/foxy/lib/python3.8/site-packages'
+alias rosfoxy='source /opt/ros/foxy/setup.bash && source ./install/setup.bash && source ./install/local_setup.bash'
 alias rosdinstall='rosdep install -y -r -q --from-paths src --ignore-src --rosdistro'
 # Neuron Startup Menu #
 ros_bashrc_path=~/.ros_menu/ros_bashrc
