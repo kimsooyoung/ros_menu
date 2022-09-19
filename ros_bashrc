@@ -74,8 +74,10 @@ if [ -f /tmp/ros_source_file.txt ]; then
     source /tmp/ros_source_file.txt
     rm -rf /tmp/ros_source_file.txt
 else
-    unalias python
-    unalias python3
+    if [[ $(alias | grep /usr/bin/python) ]]; then
+        unalias python
+        unalias python3
+    fi
 fi
 
 # # # # # # # # # # # # # # # # # # # #
