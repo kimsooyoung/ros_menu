@@ -20,7 +20,7 @@ if (source_file['Config']['menu_enable'] != True):
 
 # Generate Menu
 keys = list(source_file['Menu'])
-print('************ Neuron Startup Menu for ROS *************')
+print("********** Swimming's Startup Menu for ROS ***********")
 print('* Usage: To set ROS env to be auto-loaded, please    *')
 print('*        assign ros_option in ros_menu/config.yaml   *')
 print('******************************************************')

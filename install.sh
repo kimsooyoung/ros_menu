@@ -46,7 +46,7 @@ alias gs='git status'
 alias gp='git pull'
 alias cw='cd ~'
 alias cs='cd ~/src'
-alias cm='cd ~ && catkin_make'
+alias cm='cd ~ && catkin_mak
 
 alias cma='catkin_make -DCATKIN_WHITELIST_PACKAGES=""'
 alias cop='catkin_make --only-pkg-with-deps'
@@ -65,13 +65,13 @@ alias rosmelo="source /opt/ros/melodic/setup.bash"
 alias roseloq='source /opt/ros/eloquent/setup.bash && source ./install/setup.bash && export PYTHONPATH=/opt/ros/eloquent/lib/python3.6/site-packages'
 alias rosfoxy='source /opt/ros/foxy/setup.bash && source ./install/setup.bash && source ./install/local_setup.bash'
 alias rosdinstall='rosdep install -y -r -q --from-paths src --ignore-src --rosdistro'
-# Neuron Startup Menu #
+# ROS Startup Menu #
 ros_bashrc_path=~/.ros_menu/ros_bashrc
 if [ -f \$ros_bashrc_path ]; then
     source \$ros_bashrc_path
 fi
-# End of Neuron Startup Menu #
+# End of ROS Startup Menu #
 EOF
 fi
 
-echo "Neuron Startup Menu installed successfully"
+echo "ROS Startup Menu installed successfully"
