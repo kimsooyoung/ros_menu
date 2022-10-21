@@ -84,9 +84,13 @@ def source_ros2():
     source_ros = 'source %s/local_setup.%s' % (source_file['Menu'][choose]['ros2_path'], shell)
     source_colcon = 'source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.%s' % shell
     export_domain_id = 'export ROS_DOMAIN_ID=%d' % ros_domain_id
+
+    python3_path_setup = "alias python3='/usr/bin/python3'"
+    python_path_setup = "alias python='/usr/bin/python3'"
+
     print('* ROS_DOMAIN_ID = %d' % ros_domain_id)
     print('------------------------------------------------------')
-    return source_colcon + '\n' + source_ros + '\n' + export_domain_id + '\n'
+    return source_colcon + '\n' + source_ros + '\n' + export_domain_id + '\n' + python3_path_setup + '\n' + python_path_setup + '\n'
 
 
 def check_bridge():

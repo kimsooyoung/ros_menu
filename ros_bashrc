@@ -73,6 +73,11 @@ python3 ~/ros_menu/ros_menu.py ~/ros_menu/config.yaml
 if [ -f /tmp/ros_source_file.txt ]; then
     source /tmp/ros_source_file.txt
     rm -rf /tmp/ros_source_file.txt
+else
+    if [[ $(alias | grep /usr/bin/python) ]]; then
+        unalias python
+        unalias python3
+    fi
 fi
 
 # # # # # # # # # # # # # # # # # # # #
