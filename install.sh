@@ -46,7 +46,7 @@ alias gs='git status'
 alias gp='git pull'
 alias cw='cd ~'
 alias cs='cd ~/src'
-alias cm='cd ~ && catkin_mak
+alias cm='cd ~ && catkin_make'
 
 alias cma='catkin_make -DCATKIN_WHITELIST_PACKAGES=""'
 alias cop='catkin_make --only-pkg-with-deps'
