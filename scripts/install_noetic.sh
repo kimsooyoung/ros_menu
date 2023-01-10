@@ -11,5 +11,6 @@ ros1_distro=noetic
 
     # Install ROS 1 build tools
     sudo apt install -y python3-rosdep python3-rosinstall-generator python3-vcstool build-essential
+    sudo apt install -y python3-catkin-tools
 
 echo "ROS $ros1_distro installed successfully"
