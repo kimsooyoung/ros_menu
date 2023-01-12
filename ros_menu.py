@@ -19,7 +19,7 @@ if (source_file['Config']['menu_enable'] != True):
 
 # Generate Menu
 keys = list(source_file['Menu'])
-print('************ Neuron Startup Menu for ROS *************')
+print('********* RoadBalance Startup Menu for ROS ***********')
 print('* Usage: Please select the following options to load *')
 print('*        ROS environment automatically.              *')
 print('******************************************************')
