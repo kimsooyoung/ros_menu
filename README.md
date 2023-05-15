@@ -29,9 +29,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/kimsooyoung/ros_menu/main/
 
 ```
 # Select which version you want.
-sh -c "MENU_VERSION=<Your Version> $(curl -fsSL https://raw.githubusercontent.com/Adlink-ROS/ros_menu/master/scripts/setup.sh)"
+sh -c "MENU_VERSION=<Your Version> $(curl -fsSL https://raw.githubusercontent.com/kimsooyoung/ros_menu/master/scripts/setup.sh)"
 # Select which config you want.
-sh -c "MENU_CONFIG=<Config Name> $(curl -fsSL https://raw.githubusercontent.com/Adlink-ROS/ros_menu/master/scripts/setup.sh)"
+sh -c "MENU_CONFIG=<Config Name> $(curl -fsSL https://raw.githubusercontent.com/kimsooyoung/ros_menu/master/scripts/setup.sh)"
 ```
 
 * Next time you open the shell, the terminal will show the following menu.

@@ -17,11 +17,22 @@ echo -n "Do you want to install ROS automatically? (y/N): "
 read ros_install
 if [ "$ros_install" '==' "y" ] || [ "$ros_install" '==' "Y" ];
 then
-    # Install ROS 1
-    ./scripts/install_${ros1_distro}.sh
+    echo -n "Do you want to install ROS Desktop? (y/N): "
+    read ros_desktop_install
+    if [ "$ros_desktop_install" '==' "y" ] || [ "$ros_desktop_install" '==' "Y" ];
+    then
+        # Install ROS 1
+        ./scripts/install_${ros1_distro}.sh
 
-    # Install ROS 2
-    ./scripts/install_${ros2_distro}.sh
+        # Install ROS 2
+        ./scripts/install_${ros2_distro}.sh
+    else
+        # Install ROS 1
+        ./scripts/install_${ros1_distro}_base.sh
+
+        # Install ROS 2
+        ./scripts/install_${ros2_distro}_base.sh
+    fi
 
     # Install ROS dependencies and related packages
     ./scripts/install_dep.sh
