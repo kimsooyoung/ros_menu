@@ -8,8 +8,7 @@ if [ ! -d $HOME/ros_menu ]; then
     else
         git clone https://github.com/kimsooyoung/ros_menu.git -b $MENU_VERSION $HOME/ros_menu
     fi
-    cd $HOME/ros_menu
-    ./install.sh $MENU_CONFIG
-    cd - > /dev/null
 fi
-    
+cd $HOME/ros_menu
+USE_CONTAINER=$USE_CONTAINER ./install.sh $MENU_CONFIG
+cd - > /dev/null
