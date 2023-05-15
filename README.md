@@ -36,7 +36,7 @@ sudo apt install -y git curl
   - native host:
 
     ```bash
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Adlink-ROS/ros_menu/master/scripts/setup.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/kimsooyoung/ros_menu/master/scripts/setup.sh)"
     ```
   
   - container
