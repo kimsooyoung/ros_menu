@@ -36,13 +36,23 @@ else
         if [ "$ros_desktop_install" '==' "y" ] || [ "$ros_desktop_install" '==' "Y" ];
         then
             # Install ROS 1
-            ./scripts/install_${ros1_distro}.sh
+            if [[ $ubuntu_version == 22.04 ]]; 
+            then
+                echo "No ROS 1 distro for Ubuntu 22.04"
+            else
+                ./scripts/install_${ros1_distro}.sh
+            fi
 
             # Install ROS 2
             ./scripts/install_${ros2_distro}.sh
         else
-            # Install ROS 1
-            ./scripts/install_${ros1_distro}_base.sh
+            if [[ $ubuntu_version == 22.04 ]]; 
+            then
+                echo "No ROS 1 distro for Ubuntu 22.04"
+            else
+                # Install ROS 1
+                ./scripts/install_${ros1_distro}_base.sh
+            fi
 
             # Install ROS 2
             ./scripts/install_${ros2_distro}_base.sh
