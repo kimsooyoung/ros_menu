@@ -25,7 +25,8 @@ fi
 	    python3-vcstool \
 	    openssh-server \
 	    byobu \
-	    wget
+	    wget \
+		gedit
 
     # Initialize and update rosdep
     sudo rosdep init
