@@ -29,6 +29,10 @@ else
     # ROS environment installation
     echo -n "Do you want to install ROS automatically? (y/N): "
     read ros_install
+
+    echo -n "Do you want to install Ignition Garden? (y/N): "
+    read ignition_install
+
     if [ "$ros_install" '==' "y" ] || [ "$ros_install" '==' "Y" ];
     then
         echo -n "Do you want to install ROS Desktop? (y/N): "
@@ -62,8 +66,6 @@ else
         ./scripts/install_dep.sh
 
         # Install Ignition Simulator
-        echo -n "Do you want to install Ignition Garden? (y/N): "
-        read ignition_install
         if [ "$ignition_install" '==' "y" ] || [ "$ignition_install" '==' "Y" ];
         then
             # Install Ignition Garden
