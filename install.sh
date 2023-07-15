@@ -61,6 +61,15 @@ else
         # Install ROS dependencies and related packages
         ./scripts/install_dep.sh
 
+        # Install Ignition Simulator
+        echo -n "Do you want to install Ignition Garden? (y/N): "
+        read ignition_install
+        if [ "$ignition_install" '==' "y" ] || [ "$ignition_install" '==' "Y" ];
+        then
+            # Install Ignition Garden
+            ./scripts/install_ignition_garden.sh
+        fi
+
     else
         echo "Skip installing ROS"
     fi
