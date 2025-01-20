@@ -1,6 +1,6 @@
 Config:
   menu_enable: true
-  ros_option: 1
+  ros_option: menu
   default_ros_domain_id: 30
 Menu:
   ROS 2 humble:
